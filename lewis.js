@@ -6,6 +6,17 @@ $(document).ready(function(){
          var wrapper = $(".wrapper");
          var slide_height = parseInt(wrapper.css('height'));
          var page_holder = $(".page-holder");
+    
+         var home = $('.home');
+         var blog = $('.blog');
+         var bio = $('.bio');
+         var research = $('.research');
+         var publications = $('.publications');
+         var courses = $('.courses');
+         var consulting = $('.consulting');
+    
+         var slider = $('.slider');
+         var mbslider = $('.mb-slider');
           
          var clicks = 0;
          var mbclicks = 0;
@@ -27,17 +38,17 @@ $(document).ready(function(){
       
         }
     function delayclosenav() {
-        $( ".nav-container" ).delay(400).animate({
+        $( ".nav-container" ).delay(500).animate({
           marginLeft: "-195px",
-          },200); $(".hamburger").delay(400).animate({
+          },200); $(".hamburger").delay(500).animate({
            opacity: "1",
-       },200); $(".close-button").delay(400).animate({
+       },200); $(".close-button").delay(500).animate({
            opacity: "0",
-       },200); container.delay(400).animate({
+       },200); container.animate({
            marginLeft: "5%",
-       },200); container.delay(400).animate({
+       },200); container.animate({
            width: "90%",
-       },200); $(".recent-post-container").delay(400).animate({
+       },200); $(".recent-post-container").delay(300).animate({
            marginLeft: "0",
        },200);
     }
@@ -51,11 +62,11 @@ $(document).ready(function(){
        },200);
     }
     function delayclosemobnav() {
-    $(".mb-hamburger").delay(400).animate({
+    $(".mb-hamburger").delay(500).animate({
            opacity: "1",
-       },200); $(".mb-close-button").delay(400).animate({
+       },200); $(".mb-close-button").delay(500).animate({
            opacity: "0",
-       },200); $( ".mobile-nav-container" ).delay(400).animate({
+       },200); $( ".mobile-nav-container" ).delay(500).animate({
            marginTop: "-330px",
        },200);
     }
@@ -74,7 +85,7 @@ $(document).ready(function(){
        },200); container.animate({
            marginLeft: container_left + 195,
        },200); $(".recent-post-container").animate({
-           marginLeft: container_left + 155,
+           marginLeft: container_left + 100,
        },200);
       
         clicks++;
@@ -110,59 +121,23 @@ $(document).ready(function(){
     
     
     $( ".home-btn" ).click(function() {
-       wrapper.animate({
-           opacity: 0,
-       },200);
-        page_holder.delay(200).animate({
-           marginTop: 0,
-       },200); 
-        wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
-        $(".recent-post-container").fadeIn(200);
+       container.fadeOut(200);
+       home.delay(300).fadeIn(200);
+       $(".recent-post-container").fadeIn(200);
         
-      $( ".home-slider").animate({
+      
+        slider.animate({
+          marginLeft: "-140%",
+      },200);
+        $( ".home-slider").animate({
           marginLeft: "-30%",
       },200);
-      $( ".bio-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".blog-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".research-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".publications-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".courses-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".consulting-slider").animate({
-          marginLeft: "-140%",
-      },200);
         
+        mbslider.animate({
+          marginLeft: "120%",
+      },200);
         $( ".mb-home-slider").animate({
           marginLeft: "33%",
-      },200);
-      $( ".mb-bio-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-blog-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-research-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-publications-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-courses-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-consulting-slider").animate({
-          marginLeft: "120%",
       },200);
         
       delayclosenav();
@@ -174,59 +149,22 @@ $(document).ready(function(){
   });     
     
   $( ".blog-btn" ).click(function() {
-      wrapper.animate({
-           opacity: 0,
-       },200);
-       page_holder.delay(200).animate({
-           marginTop: 590*-1,
-       },200); 
-      wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
+       container.fadeOut(200);
+       blog.delay(300).fadeIn(200);
       $(".recent-post-container").fadeOut(200);
       
-      $( ".home-slider").animate({
+      slider.animate({
           marginLeft: "-140%",
       },200);
-      $( ".blog-slider").animate({
+        $( ".blog-slider").animate({
           marginLeft: "-30%",
       },200);
-      $( ".bio-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".research-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".publications-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".courses-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".consulting-slider").animate({
-          marginLeft: "-140%",
-      },200);
       
-       $( ".mb-home-slider").animate({
+       mbslider.animate({
           marginLeft: "120%",
       },200);
-      $( ".mb-blog-slider").animate({
+        $( ".mb-blog-slider").animate({
           marginLeft: "33%",
-      },200);
-      $( ".mb-bio-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-research-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-publications-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-courses-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-consulting-slider").animate({
-          marginLeft: "120%",
       },200);
       
       delayclosenav();
@@ -238,59 +176,22 @@ $(document).ready(function(){
   });
     
    $( ".bio-btn" ).click(function() {
-       wrapper.animate({
-           opacity: 0,
-       },200);
-       page_holder.delay(200).animate({
-           marginTop: 590*-2,
-       },200); 
-       wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
+       container.fadeOut(200);
+       bio.delay(300).fadeIn(200); 
        $(".recent-post-container").fadeOut(200);
        
-       $( ".home-slider").animate({
+       slider.animate({
           marginLeft: "-140%",
       },200);
-      $( ".blog-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".bio-slider").animate({
+        $( ".bio-slider").animate({
           marginLeft: "-30%",
       },200);
-      $( ".research-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".publications-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".courses-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".consulting-slider").animate({
-          marginLeft: "-140%",
-      },200);
        
-        $( ".mb-home-slider").animate({
+        mbslider.animate({
           marginLeft: "120%",
       },200);
-      $( ".mb-blog-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-bio-slider").animate({
+        $( ".mb-bio-slider").animate({
           marginLeft: "33%",
-      },200);
-      $( ".mb-research-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-publications-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-courses-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-consulting-slider").animate({
-          marginLeft: "120%",
       },200);
        
        delayclosenav();
@@ -302,59 +203,22 @@ $(document).ready(function(){
   });
     
     $( ".research-btn" ).click(function() {
-        wrapper.animate({
-           opacity: 0,
-       },200);
-       page_holder.delay(200).animate({
-           marginTop: 590*-3,
-       },200);
-        wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
-        $(".recent-post-container").fadeOut(200);
+        container.fadeOut(200);
+       research.delay(300).fadeIn(200);
+      $(".recent-post-container").fadeOut(200);
         
-        $( ".home-slider").animate({
+        slider.animate({
           marginLeft: "-140%",
       },200);
-      $( ".bio-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".blog-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".research-slider").animate({
+        $( ".research-slider").animate({
           marginLeft: "-30%",
       },200);
-      $( ".publications-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".courses-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".consulting-slider").animate({
-          marginLeft: "-140%",
-      },200);
         
-         $( ".mb-home-slider").animate({
+         mbslider.animate({
           marginLeft: "120%",
       },200);
-      $( ".mb-bio-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-blog-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-research-slider").animate({
+        $( ".mb-research-slider").animate({
           marginLeft: "33%",
-      },200);
-      $( ".mb-publications-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-courses-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-consulting-slider").animate({
-          marginLeft: "120%",
       },200);
         
         delayclosenav();
@@ -366,59 +230,22 @@ $(document).ready(function(){
   });
     
     $( ".publications-btn" ).click(function() {
-        wrapper.animate({
-           opacity: 0,
-       },200);
-       page_holder.delay(200).animate({
-           marginTop: 590*-4,
-       },200); 
-        wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
-        $(".recent-post-container").fadeOut(200);
+        container.fadeOut(200);
+       publications.delay(300).fadeIn(200);
+      $(".recent-post-container").fadeOut(200);
         
-        $( ".home-slider").animate({
+        slider.animate({
           marginLeft: "-140%",
       },200);
-      $( ".bio-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".blog-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".research-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".publications-slider").animate({
+        $( ".publications-slider").animate({
           marginLeft: "-30%",
       },200);
-      $( ".courses-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".consulting-slider").animate({
-          marginLeft: "-140%",
-      },200);
         
-         $( ".mb-home-slider").animate({
+         mbslider.animate({
           marginLeft: "120%",
       },200);
-      $( ".mb-bio-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-blog-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-research-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-publications-slider").animate({
+        $( ".mb-publications-slider").animate({
           marginLeft: "33%",
-      },200);
-      $( ".mb-courses-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-consulting-slider").animate({
-          marginLeft: "120%",
       },200);
         
        delayclosenav();
@@ -430,59 +257,22 @@ $(document).ready(function(){
   });
     
     $( ".courses-btn" ).click(function() {
-        wrapper.animate({
-           opacity: 0,
-       },200);
-       page_holder.delay(200).animate({
-           marginTop: 590*-5,
-       },200); 
-        wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
-        $(".recent-post-container").fadeOut(200);
+        container.fadeOut(200);
+       courses.delay(300).fadeIn(200);
+      $(".recent-post-container").fadeOut(200);
         
-        $( ".home-slider").animate({
+        slider.animate({
           marginLeft: "-140%",
       },200);
-      $( ".bio-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".blog-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".research-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".publications-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".courses-slider").animate({
+        $( ".courses-slider").animate({
           marginLeft: "-30%",
       },200);
-      $( ".consulting-slider").animate({
-          marginLeft: "-140%",
-      },200);
         
-         $( ".mb-home-slider").animate({
+         mbslider.animate({
           marginLeft: "120%",
       },200);
-      $( ".mb-bio-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-blog-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-research-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-publications-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-courses-slider").animate({
+        $( ".mb-courses-slider").animate({
           marginLeft: "33%",
-      },200);
-      $( ".mb-consulting-slider").animate({
-          marginLeft: "120%",
       },200);
         
         delayclosenav();
@@ -495,58 +285,21 @@ $(document).ready(function(){
     
     
     $( ".consulting-btn" ).click(function() {
-       wrapper.animate({
-           opacity: 0,
-       },200);
-       page_holder.delay(200).animate({
-           marginTop: 590*-6,
-       },200); 
-       wrapper.delay(200).animate({
-           opacity: 1,
-       },100);
-        $(".recent-post-container").fadeOut(200);
+       container.fadeOut(200);
+       consulting.delay(300).fadeIn(200);
+      $(".recent-post-container").fadeOut(200);
        
-       $( ".home-slider").animate({
+       slider.animate({
           marginLeft: "-140%",
       },200);
-      $( ".bio-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".blog-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".research-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".publications-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".courses-slider").animate({
-          marginLeft: "-140%",
-      },200);
-      $( ".consulting-slider").animate({
+        $( ".consulting-slider").animate({
           marginLeft: "-30%",
       },200);
        
-        $( ".mb-home-slider").animate({
+        mbslider.animate({
           marginLeft: "120%",
       },200);
-      $( ".mb-bio-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-blog-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-research-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-publications-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-courses-slider").animate({
-          marginLeft: "120%",
-      },200);
-      $( ".mb-consulting-slider").animate({
+        $( ".mb-consulting-slider").animate({
           marginLeft: "33%",
       },200);
         
@@ -559,71 +312,6 @@ $(document).ready(function(){
   });
           
           
-          
-          
-    $('.butt').click(function(e) {
-       e.preventDefault();
-       href = $(this).attr('href');
-       $( ".float, .mfloat" ).animate({ "top": "+=15px" },300);
-       $( ".text-containerhm1" ).animate({ 
-       marginLeft: "-100%",
-       },400);
-       $('.float, .mfloat').delay(200).animate({ "top": "-=500px" }, 1000, function() {
-        window.location = "sanford1.html";
-    });
-});
-          
-    $('.button1').click(function(e) {
-       e.preventDefault();
-       href = $(this).attr('href');
-       $( ".button1" ).animate({ 
-       opacity: "1",
-       },200);
-       $('.button1').animate({ 
-       opacity: "0",
-       }, 400, function() {
-        window.location = "sanford.html";
-    });
-});
-          
-    $('.button2').click(function(e) {
-       e.preventDefault();
-       href = $(this).attr('href');
-       $( ".button2" ).animate({ 
-       opacity: "1",
-       },200);
-       $('.button2').animate({ 
-       opacity: "0",
-       }, 400, function() {
-        window.location = "sanford1.html";
-    });
-});
-          
-    $('.button3').click(function(e) {
-       e.preventDefault();
-       href = $(this).attr('href');
-       $( ".button3" ).animate({ 
-       opacity: "1",
-       },200);
-       $('.button3').animate({ 
-       opacity: "0",
-       }, 400, function() {
-        window.location = "sanford2.html";
-    });
-});
-          
-     $('.button4').click(function(e) {
-       e.preventDefault();
-       href = $(this).attr('href');
-       $( ".button4" ).animate({ 
-       opacity: "1",
-       },200);
-       $('.button4').animate({ 
-       opacity: "0",
-       }, 400, function() {
-        window.location = "sanford3.html";
-    });
-});
 
 });
       
