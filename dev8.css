@@ -1,0 +1,852 @@
+/* Mark O. Lewis Style Page */
+/* #5798b4 */
+
+body {
+    background: url() top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mobile-nav-container {
+    display: none;
+}
+
+.nav-container {
+   padding-right: 10px;
+}
+
+.nav-container::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-container {
+    -ms-overflow-style: none;
+}
+
+.hamburger {
+    position: relative;
+    height: 20px;
+    width: 12%;
+    margin-left: 83.33%;
+    margin-top: 20px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.line-1 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.line-2 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 7px;
+}
+
+.line-3 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 7px;
+}
+
+.close-button {
+    position: relative;
+    height: 30px;
+    width: 12%;
+    background-color: ;
+    margin-left: 83.33%;
+    margin-top: -11px;
+    opacity: 0;
+    z-index: -10;
+}
+
+.close-line-1 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.close-line-2 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: rotate(315deg);
+    margin-top: -2px;
+}
+
+.nav-text-container {
+    position: relative;
+    background-color: ;
+    width: 75%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -90px;
+}
+
+.nav-text-container ul {
+    list-style: none;
+    color: white;
+    font-family: 'raleway', 'helvetica', sans-serif;
+    font-weight: 200;
+    line-height: 2em;
+    font-size: 1.7em;
+    padding-left: 0;
+    padding-top: 90px;
+}
+
+.nav-text-container ul li:hover {
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    height: 40px;
+    margin-top: 3.5%;
+    width: 115%;
+    /* margin-left: -30%; */
+    margin-left: -140%;
+    background-color: #5798b4;
+    z-index: -10;
+}
+
+.home-slider {
+    margin-left: -30%;
+}
+
+
+
+
+/* /////////// BODY /////////// */
+
+@keyframes cloud {
+    from {margin-left: 100%;}
+    to {margin-left: -66%}
+}
+
+.cloud {
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    margin-left: 100%;
+    background-color: ;
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/01/cloud1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    animation: cloud 90s linear 0s infinite;
+    opacity: .8;
+}
+
+.cloud-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.wrapper {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: ;
+    top: 0;
+    margin-left: 55px;
+    left: 0;
+    overflow: hidden;
+}
+
+.page-holder {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: ;
+    overflow-x: ;
+}
+
+.content-container {
+    position: absolute;
+    width: 90%;
+    height: 550px;
+    background-color: rgb(255,255,255);
+    margin-right: 5%;
+    margin-left: 5%;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.text-container {
+    position: relative;
+    width: 62%;
+    margin-left: 33%;
+    top: 40px;
+    background-color: ;
+    font-family: 'raleway';
+    font-weight: 500;
+    background-color: ;
+}
+
+.home {
+    background: none;
+    overflow: hidden;
+}
+
+.home-container {
+    background-color: ;
+    height: 60%;
+    width: 100%;
+    
+}
+
+.logo-home {
+    display: none;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    background-repeat: no-repeat;
+    
+}
+
+.logoie8 {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+/* ****** RECENT POSTS FRONT PAGE ******* */
+
+.recent-post-container {
+    position: absolute;
+    width: 100%;
+    padding-left: 8%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 60px;
+    background-color: rgb(0,0,0);
+    bottom: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+.home-page-photo-container {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: ;
+    display: inline-block;
+    margin-top: ;
+    overflow: hidden;
+}
+
+.home-page-photo {
+    margin-top: -20px;
+}
+
+.recent-posts-headline {
+    position: absolute;
+    width: 78%;
+    height: 30px;
+    background-color: ;
+    margin-top: -10px;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top;
+    
+    font-family: 'raleway';
+    font-weight: 300;
+    color: white;
+    font-size: 1.5em;
+    line-height: 0.3em;
+}
+
+.headline-holder {
+    display: inline-block;
+}
+
+.follow-holder {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.follow-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 18px;
+    display: inline-block;
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/02/LinkedIn-Share-Button-feature.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.follow-text {
+    display: inline-block;
+}
+
+.follow-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.follow-text a:hover {
+    cursor: pointer;
+    color: #5798b4
+    
+}
+
+.recent-posts-headline p {
+    display: inline-block;
+}
+
+.recent-posts-holder {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    margin-left: 2%;
+    margin-top: 30px;
+    background-color: ;
+    display: inline-block;
+}
+
+.recent-post {
+    height: 100%;
+    width: 30%;
+    background-color: ;
+    overflow: hidden;
+    margin-right: 2%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.recent-blog-image {
+    width: 100%;
+    height: 7vh;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+.recent-post h2 {
+    font-family: "raleway";
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    z-index: 50;
+}
+.recent-post h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.recent-post h2 a:hover {
+    text-decoration: none;
+    color: #5798b4;
+    cursor: pointer;
+}
+
+
+
+
+.page-title {
+    font-family: 'raleway';
+    font-weight: 200;
+    font-size: 3em;
+    display: inline-block;
+}
+
+.small-logo-container {
+    position: absolute;
+    width: 25%;
+    height: 60px;
+    background-color: ;
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/01/mol-logo-2-bw-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    top: 40px;
+}
+
+.picture-container {
+    position: absolute;
+    width: 25%;
+    height: 350px;
+    background-color: ;
+    margin-left: 5%;
+    top: 95px;
+    overflow: hidden;
+}
+
+.page-photo {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-weight: 600;
+    color: #5798b4;
+    font-size: 1.5em;
+}
+
+.bio {
+    display: none;
+}
+
+.blog {
+    background-color: rgb(255,255,255);
+    overflow: hidden;
+    display: none;
+
+}
+
+.blog-title-holder {
+    display: flex;
+}
+
+.blog-title-holder a {
+    color: black;
+}
+
+.blog-follow {
+    margin-top: 8px;
+    
+}
+
+.blog-title {
+    height: 125px;
+    width: 100%;
+    background-color: rgb(255,255,255);
+}
+
+.posts-container {
+    height: 415px;
+    width: 100%;
+    background-color: ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.blog-post {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    padding: 2%;
+    padding-bottom: 3.5%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.blog-image {
+    position: relative;
+    width: 25%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.blog-post h2 a {
+    text-decoration: none;
+    font-family: "raleway";
+    font-weight: 600;
+    color: #5798b4;
+    font-size: 1em;
+}
+
+.blog-post h2 {
+    margin-left: 28%;
+    width: 60%;
+    overflow: hidden;
+    margin-top: -75px;
+}
+
+.consulting {
+    display: none;
+}
+
+.research {
+    display: none;
+}
+
+.publications {
+    display: none;
+}
+
+.courses {
+    display: none;
+}
+
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////////////
+MOBILE
+////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@media only screen and (max-width: 567px) {
+    
+   body {
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/01/mountain-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+    .nav-container {
+        display: none;
+    }
+    
+.mobile-nav-container {
+    position: fixed;
+    width: 100%;
+    height: 380px;
+    background-color: black;
+    z-index: 100;
+    /*margin-top: -20px;*/
+    margin-top: -330px;
+    display: block;
+    left: 0;
+    right: 0;
+}
+
+.mb-hamburger {
+    position: relative;
+    height: 20px;
+    width: 8%;
+    margin-left: 83.33%;
+    margin-top: 340px;
+}
+
+.mb-hamburger:hover {
+    cursor: pointer;
+}
+
+.line-1 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.line-2 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 7px;
+}
+
+.line-3 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top: 7px;
+}
+
+.mb-close-button {
+    position: relative;
+    height: 30px;
+    width: 8%;
+    background-color: ;
+    margin-left: 83.33%;
+    margin-top: -11px;
+    opacity: 0;
+    z-index: -10;
+}
+
+.close-line-1 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.close-line-2 {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: rotate(315deg);
+    margin-top: -2px;
+}
+
+    
+    
+.mb-nav-text-container {
+    position: absolute;
+    background-color: ;
+    width: 83.33%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+}
+
+.mb-nav-text-container ul {
+    list-style: none;
+    color: white;
+    text-align: right;
+    font-family: 'raleway', 'helvetica', sans-serif;
+    font-weight: 200;
+    line-height: 1.5em;
+    font-size: 1.7em;
+    padding-left: 0;
+}
+
+.mb-nav-text-container ul li:hover {
+    cursor: pointer;
+}
+
+.mb-slider {
+    position: absolute;
+    height: 40px;
+    margin-top: ;
+    width: 100%;
+    /* margin-left: -30%; */
+    margin-left: 120%;
+    background-color: #5798b4;
+    z-index: -100;
+}
+
+.mb-home-slider {
+    margin-left: 33%;
+}
+
+
+
+
+/* /////////// BODY /////////// */
+
+@keyframes cloud {
+    from {margin-left: 100%;}
+    to {margin-left: -90%}
+}
+
+.cloud {
+    position: absolute;
+    width: 90%;
+    height: 300px;
+    margin-left: 100%;
+    background-color: ;
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/01/cloud1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    animation: cloud 90s linear 0s infinite;
+    opacity: .8;
+}
+
+.cloud-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+    .recent-post-container {
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        
+    }
+    
+.wrapper {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: ;
+    margin-left: 2.5%;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.page-holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: ;
+    overflow-x: ;
+}
+
+.content-container {
+    position: relative;
+    width: 90%;
+    height: 540px;
+    background-color: rgb(255,255,255);
+    margin-right: 5%;
+    margin-left: 5%;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+    overflow: scroll;
+}
+
+.home {
+  
+    overflow: hidden;
+    
+}
+
+.home-container {
+    background: none;
+    height: 100%;
+    width: 100%;
+}
+
+
+.page-title {
+    font-family: 'raleway';
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.small-logo-container {
+    position: absolute;
+    width: 25%;
+    height: 60px;
+    background-color: ;
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/01/mol-logo-2-bw-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    top: 40px;
+    display: none;
+}
+
+.picture-container {
+    position: absolute;
+    width: 90%;
+    height: 350px;
+    background-color: ;
+    margin-left: 5%;
+    top: 75px;
+    overflow: hidden;
+    display: block;
+}
+
+.page-photo {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    top: 40px;
+    background-color: ;
+    font-family: 'raleway';
+    font-weight: 500;
+    display: block;
+    padding-bottom: 0px;
+}
+
+h2 {
+    font-weight: 600;
+    color: #5798b4;
+    font-size: 1.5em;
+}
+    
+    .text-body {
+        margin-top: 380px;
+    }
+    
+    .blog {
+       
+    }
+    
+    .blog-post {
+        height: 250px;
+    }
+    
+.posts-container {
+    width: 100%;
+    height: auto;
+    background-color: ;
+    overflow-x: hidden;
+}
+    
+
+    
+} /* end mobile */
+
+@media only screen and (max-height: 550px) {
+
+.text-container {
+    padding-bottom: 200px;
+}
+}
+
+@media only screen and (max-height: 900px) {
+    .recent-post h2 {
+    font-size: .8em;
+}
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+    .recent-post-container {
+        height: 75px;
+        padding-top: 17px;
+    }
+    
+    .recent-post h2 {
+        font-size: .8em;
+    }
+    
+    .home-page-photo-container {
+        width: 75px;
+        height: 75px;
+    }
+    
+}
+
+@media only screen and (min-width: 1600px) {
+    
+    .home-page-photo-container {
+        width: 85px;
+        height: 85px;
+    }
+    .recent-post-container {
+        height: 85px;
+        padding-top: 20px;
+    }
+    
+    .picture-container {
+        height: 500px;
+    }
+    .content-container {
+        margin-top: 100px;
+    }
+    
+}
+
+@media only screen and (min-width: 2000px) {
+    
+    .picture-container {
+        width: 20%;
+    }
+    
+}
+
