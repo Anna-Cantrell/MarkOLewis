@@ -17,8 +17,20 @@
 </div>
                 
     <div class="recent-posts-headline">
+        <div class="headline-holder">
         <p>Recent Blog Posts</p>
-    </div>
+        </div>
+                
+                <div class="follow-button"></div>
+                
+                <div class="follow-holder">
+                  <p class="follow-text">
+                   <?php echo '<a href="https://www.linkedin.com/in/mark-lewis-30491548" target="_blank">follow</a>'; ?> 
+                  </p>    
+            </div>
+                
+        </div>
+    
                 
     <div class="recent-posts-holder">
         
@@ -49,11 +61,16 @@
         <div class="content-container home"> 
             
            <div class="home-container">
-               <div class="logo-home"></div>
+                   <!--[if IE 8]>
+                   <img class="logoie8" src="http://markolewis.com/wp-content/uploads/2017/01/mol-logo-2-bw-01.png" style="height:150px;" />
+                   <![endif]--> 
                
+               <div class="logo-home">
+                   
             </div>
             
       </div>
+           </div>
            
            
            <!--- BLOG PAGE --->
@@ -76,8 +93,21 @@ $catquery = new WP_Query( 'cat=9&posts_per_page=1' ); while($catquery->have_post
             <?php
 $catquery = new WP_Query( 'cat=3&posts_per_page=1' ); while($catquery->have_posts()) : $catquery->the_post(); ?>
   	
-        
-             <div class="page-title"><?php the_title(); ?></div>
+                   
+        <div class="blog-title-holder">
+            
+            <div class="page-title"><?php the_title(); ?></div>
+                 
+                   <div class="follow-holder blog-follow">
+                <div class="follow-button"></div>
+                  <p class="follow-text">
+                   <?php echo '<a href="https://www.linkedin.com/in/mark-lewis-30491548" target="_blank">follow</a>'; ?> 
+                  </p>    
+            </div>
+         </div>
+                   
+            
+                   
                    <div class="text-body">
              
 				<?php get_template_part( 'content', get_post_format() ); ?>
