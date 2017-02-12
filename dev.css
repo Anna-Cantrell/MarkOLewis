@@ -32,6 +32,10 @@ body {
     display: none;
 }
 
+.nav-container {
+    -ms-overflow-style: none;
+}
+
 .hamburger {
     position: relative;
     height: 20px;
@@ -279,7 +283,46 @@ body {
     color: white;
     font-size: 1.5em;
     line-height: 0.3em;
+}
+
+.headline-holder {
+    display: inline-block;
+}
+
+.follow-holder {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.follow-button {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 18px;
+    display: inline-block;
+    background-image: url(http://markolewis.com/wp-content/uploads/2017/02/LinkedIn-Share-Button-feature.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.follow-text {
+    display: inline-block;
+}
+
+.follow-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.follow-text a:hover {
+    cursor: pointer;
+    color: #5798b4
     
+}
+
+.recent-posts-headline p {
+    display: inline-block;
 }
 
 .recent-posts-holder {
@@ -336,6 +379,7 @@ body {
     font-family: 'raleway';
     font-weight: 200;
     font-size: 3em;
+    display: inline-block;
 }
 
 .small-logo-container {
@@ -380,6 +424,19 @@ h2 {
     overflow: hidden;
     display: none;
 
+}
+
+.blog-title-holder {
+    display: flex;
+}
+
+.blog-title-holder a {
+    color: black;
+}
+
+.blog-follow {
+    margin-top: 8px;
+    
 }
 
 .blog-title {
