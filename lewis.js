@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
           
          var container = $(".content-container");
          var container_left = parseInt(container.css('marginLeft'));
@@ -312,6 +312,4 @@ $(document).ready(function(){
   });
           
           
-
-});
-      
+   
